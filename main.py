@@ -22,9 +22,9 @@ import sys
 PATTERNS = {
     "AWS Access Key":       r"AKIA[0-9A-Z]{16}",
     "AWS Secret Key":       r"(?i)aws(.{0,20})?(secret|access)?(.{0,20})?['\"][0-9a-zA-Z/+]{40}['\"]",
-    "Google API Key":       r"AIza[0-9A-Za-z\-_]{35}",
+    "Google API Key":       r"AIza[0-9A-Za-z\-_]{20,40}",
     "Slack Token":          r"xox[baprs]-[0-9a-zA-Z-]{10,48}",
-    "GitHub Token":         r"gh[pousr]_[0-9a-zA-Z]{36}",
+    "GitHub Token":         r"gh[pousr]_[0-9a-zA-Z]{20,40}",
     "Generic Bearer Token": r"(?i)bearer\s+[a-zA-Z0-9\-._~+/]{20,}",
     "Generic API Key":      r"(?i)(api[_-]?key|apikey)\s*[:=]\s*['\"][0-9a-zA-Z\-_]{16,}['\"]",
     "Generic Secret":       r"(?i)(secret|token|passwd|password)\s*[:=]\s*['\"][^'\"\s]{8,}['\"]",
