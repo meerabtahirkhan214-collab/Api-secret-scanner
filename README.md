@@ -1,4 +1,5 @@
-# source-code-editor
+# Api-secret-scanner
+
 ``
 A small Python script I built to scan code files for accidentally exposed API keys and credentials — things like AWS keys, GitHub tokens, Google API keys, etc. — using regular expressions.
 
